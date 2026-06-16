@@ -149,13 +149,23 @@ Todo o conteúdo das seções 2–6 é injetado via `innerHTML` no `DOMContentLo
 
 ---
 
-## Perguntas pendentes antes de implementar
+## Perguntas respondidas
 
-1. **Hub de Materiais:** Quais são as pastas/subpastas e seus nomes exatos dentro do Google Drive linkado? Precisamos dos links diretos por categoria para criar os cards corretamente.
-2. **Ícones de features:** As imagens oficiais de cada feature ainda serão enviadas — aguardar antes de implementar os cards de features no Consolidado e no detalhe de campanhas.
-3. **claro_asset_background.gif:** Ainda será enviado — implementar o background do hero como placeholder (comentário no HTML) e finalizar quando o asset chegar.
-4. **Logo Claro no stage:** Confirmar se a logo deve aparecer apenas como `<img src="Claro-logo.png">` (arquivo externo) ou deve ser re-embutida em base64 como as demais logos.
-5. **Linha do tempo — datas exatas:** Confirmar as datas de início de cada flight para posicionar corretamente os pontos na linha do tempo. Estão na base xlsx?
+1. **Hub de Materiais — link do Drive:**
+   `https://drive.google.com/drive/folders/1wg4SnRKzlq-ptXMqWX1MSq63gl55wrZo?usp=drive_link`
+   Usar o Google Drive MCP para listar as subpastas e criar um card por categoria (Pós-vendas, Estudos, Audience Discovery) com os links correspondentes.
+
+2. **Ícones de features — link do Drive:**
+   `https://drive.google.com/drive/folders/1wg4SnRKzlq-ptXMqWX1MSq63gl55wrZo?usp=drive_link`
+   (mesma pasta dos materiais) — usar o Google Drive MCP para baixar as imagens e embutir em base64 nos cards de features.
+
+3. **claro_asset_background.gif — link do Drive:**
+   `https://drive.google.com/drive/folders/1DIuRHJm74lGeaCus2086g_wZ0JBTxJhj?usp=sharing`
+   O GIF do mapa do Brasil com pontos vermelhos brilhantes também foi enviado diretamente pelo usuário. Baixar via Google Drive MCP e embutir em base64 como background do hero.
+
+4. **Logo Claro no stage:** Re-embutir em base64 (não usar arquivo externo).
+
+5. **Linha do tempo — granularidade:** Usar apenas o mês de veiculação de cada flight (sem necessidade de dia exato).
 
 ---
 
