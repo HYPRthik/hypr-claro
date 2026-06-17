@@ -5,8 +5,8 @@ from openpyxl.styles import Font, PatternFill, Alignment
 src = "/root/.claude/uploads/34498236-b66d-5586-88f6-a946b1dcc30e/f04950e1-HAVAIANAS__SC.md"
 raw = open(src, encoding="utf-8").read()
 
-# Remover escapes de markdown (\_ \[ \] \* \# etc.) que nao sao escapes validos de JSON
-raw = re.sub(r'\\([_\[\]*#~`>])', r'\1', raw)
+# Remover escapes de markdown: barra invertida seguida de char que NAO seja escape JSON valido
+raw = re.sub(r'\\(?!["\\/bfnrtu])', '', raw)
 
 obj = json.loads(raw)
 rows = obj["data"]
